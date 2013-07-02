@@ -17,11 +17,11 @@ Options +FollowSymLinks
 	#RewriteRule ^ - [L]
 
 	# presmerovani subdomeny s www na verzi bez www
-	RewriteCond %{HTTP_HOST} www\.(.*)\.([^\.]+)\.([^\.]*)$
+	RewriteCond %{HTTP_HOST} www\.(.*)\.([^.]+)\.([^.]*)$
 	RewriteRule (.*)$ http://%1.%2.%3/$1 [R=301,L,NE]
 
 	# presmerovani domeny 2. radu na verzi s www
-	RewriteCond %{HTTP_HOST} ^([^\.]+)\.([^\.]*)$
+	RewriteCond %{HTTP_HOST} ^([^.]+)\.([^.]*)$
 	RewriteRule (.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L,NE]
 
 	# ochrana proti zacyklení
@@ -29,16 +29,16 @@ Options +FollowSymLinks
 	RewriteRule ^ - [L]
 
 	#kontrola existence subdomeny
-	RewriteCond %{HTTP_HOST} ^(.*)\.([^\.]*)\.([^\.]*)$
+	RewriteCond %{HTTP_HOST} ^(.*)\.([^.]*)\.([^.]*)$
 	RewriteCond %{DOCUMENT_ROOT}/%1_root !-d
 	RewriteRule ^ - [R=404,NC,L]
 
 	# presmerovani na verzi s lomitkem
-	RewriteCond %{HTTP_HOST} ^(.*)\.([^\.]*)\.([^\.]*)$
+	RewriteCond %{HTTP_HOST} ^(.*)\.([^.]*)\.([^.]*)$
 	RewriteCond %{DOCUMENT_ROOT}/%1_root/%{REQUEST_URI}/ -d
 	RewriteRule ^(.*)[^/]$ %{REQUEST_URI}/ [R=301,L,NE]
 
 	# podstrceni obsahu
-	RewriteCond %{HTTP_HOST} ^(.*)\.([^\.]*)\.([^\.]*)$
+	RewriteCond %{HTTP_HOST} ^(.*)\.([^.]*)\.([^.]*)$
 	RewriteRule ^(.*)$ %1_root/$1 [L]
 </IfModule>
