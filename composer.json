@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+        "nette/tester": "dev-master",
+        "kdyby/curl": "dev-master",
+        "nette/nette": "dev-master"
+    }
+}

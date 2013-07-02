@@ -1,0 +1,14 @@
+# htaccess tests
+127.0.0.1	htaccess-tests.l
+127.0.0.1	www.htaccess-tests.l
+127.0.0.1	forum.htaccess-tests.l
+127.0.0.1	www.forum.htaccess-tests.l
+127.0.0.1	archive.forum.htaccess-tests.l
+127.0.0.1	www.archive.forum.htaccess-tests.l
+127.0.0.1	imgs.htaccess-tests.l
+127.0.0.1	www.imgs.htaccess-tests.l
+127.0.0.1	bad-subdomain.htaccess-tests.l
+127.0.0.1	www.bad-subdomain.htaccess-tests.l
+127.0.0.1	bad.bad-subdomain.htaccess-tests.l
+127.0.0.1	www.bad.bad-subdomain.htaccess-tests.l
+# \htaccess tests
