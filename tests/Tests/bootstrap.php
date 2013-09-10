@@ -20,7 +20,7 @@
 		return $val;
 	}
 	
-	function subdomain($subdomain = NULL, $file = NULL)
+	function subdomain($subdomain = NULL, $file = NULL, $scheme = 'http')
 	{
 		$port = '';
 		
@@ -35,6 +35,11 @@
 		}
 		
 		return "http://$subdomain" . HOST . "$port/$file";
+	}
+	
+	function securedSubdomain($subdomain = NULL, $file = NULL)
+	{
+		return subdomain($subdomain, $file, 'https');
 	}
 	
 	$configurator = new Nette\Config\Configurator;
