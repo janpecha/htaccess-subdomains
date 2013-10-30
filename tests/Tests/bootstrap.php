@@ -34,7 +34,7 @@
 			$subdomain .= '.';
 		}
 		
-		return "http://$subdomain" . HOST . "$port/$file";
+		return "$scheme://$subdomain" . HOST . "$port/$file";
 	}
 	
 	function securedSubdomain($subdomain = NULL, $file = NULL)
