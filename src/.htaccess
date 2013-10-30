@@ -15,14 +15,19 @@ Options +FollowSymLinks
 	#RewriteCond %{REQUEST_URI} ^/my-error-page\.html$ [OR]
 	#RewriteCond %{REQUEST_URI} ^/errors/e404\.html$
 	#RewriteRule ^ - [L]
+	
+	# HTTP(S) resolving
+	# http://www.askapache.com/htaccess/http-https-rewriterule-redirect.html
+	RewriteCond %{SERVER_PORT}s ^(443(s)|[0-9]+s)$
+	RewriteRule ^(.*)$ - [env=htsubprot:%2]
 
 	# presmerovani subdomeny s www na verzi bez www
 	RewriteCond %{HTTP_HOST} www\.(.*)\.([^.]+)\.([^.]*)$
-	RewriteRule (.*)$ http://%1.%2.%3/$1 [R=301,L,NE]
+	RewriteRule (.*)$ http%{ENV:htsubprot}://%1.%2.%3/$1 [R=301,L,NE]
 
 	# presmerovani domeny 2. radu na verzi s www
 	RewriteCond %{HTTP_HOST} ^([^.]+)\.([^.]*)$
-	RewriteRule (.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L,NE]
+	RewriteRule (.*)$ http%{ENV:htsubprot}://www.%{HTTP_HOST}/$1 [R=301,L,NE]
 
 	# ochrana proti zacyklení
 	RewriteCond %{ENV:REDIRECT_STATUS} 200

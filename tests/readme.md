@@ -12,6 +12,10 @@ cd ..
 composer install --dev
 ```
 
+Tests for HTTPS
+---------------
+Configure Apache for HTTPS and change value of constant TEST_HTTPS from FALSE to TRUE in Tests/bootstrap.php file.
+
 Run tests
 ---------
 Run ```./run-tests.sh```.
