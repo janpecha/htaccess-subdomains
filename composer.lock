@@ -14,12 +14,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/Curl.git",
-                "reference": "7e8588d2f01a96a6640ec438135730a1cfa5482a"
+                "reference": "88a800bfaa606a253e28966f82be0d88305d9182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Kdyby/Curl/zipball/7e8588d2f01a96a6640ec438135730a1cfa5482a",
-                "reference": "7e8588d2f01a96a6640ec438135730a1cfa5482a",
+                "url": "https://api.github.com/repos/Kdyby/Curl/zipball/88a800bfaa606a253e28966f82be0d88305d9182",
+                "reference": "88a800bfaa606a253e28966f82be0d88305d9182",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "http",
                 "nette"
             ],
-            "time": "2013-06-30 13:36:22"
+            "time": "2013-10-07 16:31:02"
         },
         {
             "name": "nette/nette",
@@ -65,12 +65,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "4e0c693fff63e4bba6c25c55c7702de331b759ed"
+                "reference": "720d7901a3c00c000ccb1b7759f19af07c0c6526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/4e0c693fff63e4bba6c25c55c7702de331b759ed",
-                "reference": "4e0c693fff63e4bba6c25c55c7702de331b759ed",
+                "url": "https://api.github.com/repos/nette/nette/zipball/720d7901a3c00c000ccb1b7759f19af07c0c6526",
+                "reference": "720d7901a3c00c000ccb1b7759f19af07c0c6526",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "neon",
                 "templating"
             ],
-            "time": "2013-07-01 02:55:27"
+            "time": "2013-10-28 13:47:57"
         },
         {
             "name": "nette/tester",
@@ -139,19 +139,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tester.git",
-                "reference": "99dfe7a8ec2e8a6ca18b9ca0cb2ce63536b466f7"
+                "reference": "4f46271816885ed38e8d55b9d3d9fa37182cd312"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/99dfe7a8ec2e8a6ca18b9ca0cb2ce63536b466f7",
-                "reference": "99dfe7a8ec2e8a6ca18b9ca0cb2ce63536b466f7",
+                "url": "https://api.github.com/repos/nette/tester/zipball/4f46271816885ed38e8d55b9d3d9fa37182cd312",
+                "reference": "4f46271816885ed38e8d55b9d3d9fa37182cd312",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "bin": [
-                "Tester/tester"
+                "Tester/tester",
+                "Tester/coverage-report"
             ],
             "type": "library",
             "autoload": {
@@ -182,7 +183,7 @@
                 "testing",
                 "unit"
             ],
-            "time": "2013-06-24 23:00:16"
+            "time": "2013-09-13 12:50:22"
         }
     ],
     "aliases": [
