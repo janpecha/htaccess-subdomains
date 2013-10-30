@@ -8,6 +8,7 @@
 	
 	define('HOST', 'htaccess-tests.l');
 	#define('PORT', 8000);
+	define('TEST_HTTPS', FALSE);
 	
 	$res = copy(__DIR__ . '/../../src/.htaccess', __DIR__ . '/../DocumentRoot/.htaccess');
 	
@@ -39,7 +40,7 @@
 	
 	function securedSubdomain($subdomain = NULL, $file = NULL)
 	{
-		return subdomain($subdomain, $file, 'https');
+		return subdomain($subdomain, $file, TEST_HTTPS ? 'https' : 'http');
 	}
 	
 	$configurator = new Nette\Config\Configurator;
