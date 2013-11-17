@@ -9,6 +9,7 @@ Directory tree
 	* ```forum_root``` (for ```forum.domain.tld```)
 	* ```support_root``` (for ```support.domain.tld```)
 	* ```archive.forum_root``` (for ```archive.forum.domain.tld```)
+	* etc.
 
 
 Features
@@ -19,5 +20,5 @@ Features
 * 404 HTTP code for nonexistent subdomains
 
 Article: http://janpecha.blogista.cz/subdomeny-pomoci-htaccess (in Czech)
-License: WTFPL
+<br>License: WTFPL
 
