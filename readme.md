@@ -1,7 +1,12 @@
 .htaccess for dynamic subdomains
 ================================
 
-<a href="https://www.patreon.com/bePatron?u=9680759"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="35"></a>
+Buy me a coffee
+---------------
+
+<a href="https://www.paypal.me/janpecha/5eur"><img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35"></a>
+
+<img src="https://buymecoffee.intm.org/img/bitcoin@2x.png" alt="Bitcoin" height="32"> `bc1qrq9egf99a6z3576twggrp6uv5td5r3pq0j4awe`
 
 
 Directory tree
@@ -22,6 +27,9 @@ Features
 * redirecting from ```www.sub.domain.tld``` to ```sub.domain.tld```
 * 404 HTTP code for nonexistent subdomains
 
-Article: http://janpecha.blogista.cz/subdomeny-pomoci-htaccess (in Czech)
+
+----
+
+Article: https://www.janpecha.cz/blog/subdomeny-pomoci-htaccess/ (in Czech)
 <br>License: WTFPL
 
